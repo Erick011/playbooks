@@ -1,0 +1,5 @@
+[controlnode]
+localhost ansible_connection=local
+[intranetweb]
+vm-3-node1-ansible.example.com
+vm-3-node2-ansible.example.com
