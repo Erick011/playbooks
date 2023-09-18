@@ -1,0 +1,11 @@
+---
+- name: Use the lineinfile moodule to insert /modify/delete task lines
+  hosts: servers
+  become: false
+  tasks:
+
+    - name: Add a single line of text to a file
+      ansible.builtin.lineinfile:
+        path: /home/automation/users.txt
+        line: This line was added by the lineinfile module.
+        state: present
